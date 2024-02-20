@@ -1,15 +1,17 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {useEffect} from 'react'
 import {TodoInput, TodoList, TodoListItem} from "./components/Todo";
-import axios from "axios";
+import { fetchTodos } from "./redux/slices/todoSlice";
 
 function App() {
   const todo = useSelector(state => state.todo)
-
+  const dispatch = useDispatch()
+  
   useEffect(()=>{
-    axios.get('http://localhost:3000/posts')
-    .then((res) => console.log(res))
+    dispatch(fetchTodos())
   }, [])
+
+  // axios.get('http://localhost:3000/todos').then((res) => res.data)
 
   return (
     <TodoList>
