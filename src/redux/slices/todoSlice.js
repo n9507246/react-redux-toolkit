@@ -5,7 +5,6 @@ const initialState = {
     { name: 'ass', id: 1, complited: false, },
     { name: 'hole', id: 23, complited: true,},
     { name: 'ass hole', id: 102, complited: false,},
-    
 ],
 }
 
