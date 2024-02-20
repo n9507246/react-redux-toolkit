@@ -1,7 +1,9 @@
+import { Counter } from "./components/Counter";
+
 function App() {
   return (
     <>
-     asdas
+     <Counter/>
     </>
   )
 }
