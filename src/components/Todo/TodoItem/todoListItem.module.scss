@@ -1,0 +1,18 @@
+.todoList__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .todoListItem__delete{
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: red;
+    }
+    .todoListItem__text{}
+    .todoListItem__complited{
+        text-decoration: line-through;
+    }
+}
